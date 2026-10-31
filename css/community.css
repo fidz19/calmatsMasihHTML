@@ -1,0 +1,4 @@
+.community-page{width:100%;padding:0 24px 64px}
+.community-gallery{width:min(100%,1256px);margin:0 auto;display:flex;flex-direction:column;gap:0}
+.community-gallery img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+@media(max-width:639px){.community-page{padding:0 8px 40px}}

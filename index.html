@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CALMATS</title>
+  <meta name="description" content="Calmats — denim dan workwear kontemporer. Dibuat untuk dipakai setiap hari.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/freeman-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/montserrat-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+
+  <div class="app">
+    <header class="site-header" data-header>
+      <div class="header-inner">
+        <button class="icon-btn menu-toggle" type="button" aria-label="Buka menu" aria-controls="mobileNav" aria-expanded="false" data-open-nav>
+          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <path d="M3.5 6.5h17M3.5 12h17M3.5 17.5h17"/>
+          </svg>
+        </button>
+
+        <a class="logo" href="./" aria-label="Calmats — beranda">CALMATS</a>
+
+        <nav class="main-nav" aria-label="Navigasi utama">
+          <a class="nav-link" href="products.html">Catalog</a>
+          <a class="nav-link" href="community.html">Community</a>
+          <a class="nav-link" href="#archives" data-demo-link="Archives">Archives</a>
+          <a class="nav-link" href="#about" data-demo-link="About">About</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="currency" data-currency>
+            <button class="currency-toggle" type="button" aria-haspopup="listbox" aria-expanded="false" data-currency-toggle>
+              <img src="assets/flags/us.svg" alt="" width="18" height="13" data-currency-flag>
+              <span data-currency-code>USD</span>
+              <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m6 9 6 6 6-6"/>
+              </svg>
+            </button>
+            <ul class="currency-menu" role="listbox" aria-label="Mata uang" hidden data-currency-menu>
+              <li>
+                <button type="button" role="option" aria-selected="true" data-currency-option data-code="USD" data-flag="assets/flags/us.svg" data-country="United States">
+                  <img src="assets/flags/us.svg" alt="" width="18" height="13">
+                  <span class="currency-menu__text"><strong>USD</strong><small>United States · $</small></span>
+                </button>
+              </li>
+              <li>
+                <button type="button" role="option" aria-selected="false" data-currency-option data-code="IDR" data-flag="assets/flags/id.svg" data-country="Indonesia">
+                  <img src="assets/flags/id.svg" alt="" width="18" height="13">
+                  <span class="currency-menu__text"><strong>IDR</strong><small>Indonesia · Rp</small></span>
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <button class="cart-btn" type="button" aria-controls="cartDrawer" aria-expanded="false" data-open-cart>
+            <svg class="cart-btn__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5.5 8h13l-1 12.5h-11L5.5 8Z"/>
+              <path d="M9 8V6.2A3 3 0 0 1 12 3.2a3 3 0 0 1 3 3V8"/>
+            </svg>
+            <span class="cart-btn__label">Cart</span>
+            <span class="cart-count" data-cart-count hidden>0</span>
+          </button>
+
+          <a class="icon-btn" href="#account" aria-label="Akun" data-demo-link="Account">
+            <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="currentColor">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.966 12.638C4.768 13.934 3 16.561 3 21.182c0 .182.072.356.2.485a.7.7 0 0 0 .97 0c.128-.129.2-.303.2-.485 0-4.92 2.709-7.628 7.63-7.628s7.629 2.708 7.629 7.628c0 .182.072.356.2.485a.7.7 0 0 0 .971 0c.129-.129.2-.303.2-.485 0-4.621-1.768-7.248-5.966-8.544a5.485 5.485 0 0 0 2.452-4.57c0-3.028-2.458-5.486-5.486-5.486s-5.486 2.458-5.486 5.486a5.485 5.485 0 0 0 2.452 4.57Zm3.034-8.684a4.114 4.114 0 1 1 0 8.228 4.114 4.114 0 0 1 0-8.228Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="site-main">
+      <section class="hero" id="hero" aria-label="Kampanye terbaru">
+        <picture>
+          <img src="assets/hero-desktop.webp"
+               alt="Dua model memakai jaket denim washed di depan dinding bercat"
+               width="1746" height="1167" fetchpriority="high" decoding="async">
+        </picture>
+        <div class="hero__content">
+          <a class="btn" href="#catalog" data-demo-link="Shop">Shop Here</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+      <div class="footer-groups">
+        <details class="footer-group" open>
+          <summary class="footer-title">
+            Payment Method
+            <svg class="footer-chev" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="currentColor">
+              <path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 0 0-1.41 0 1 1 0 0 0 0 1.42l4.24 4.24a1 1 0 0 0 1.42 0L17 10.59a1 1 0 0 0 0-1.42Z"/>
+            </svg>
+          </summary>
+          <div class="footer-body">
+            <ul class="payments" aria-label="Metode pembayaran">
+              <li><span class="pay-icon pay-qris" role="img" aria-label="QRIS"></span></li>
+              <li><span class="pay-icon pay-ovo" role="img" aria-label="OVO"></span></li>
+              <li><img class="pay-logo" src="assets/payments/akulaku.svg" alt="Akulaku" width="48" height="48" loading="lazy"></li>
+              <li><span class="pay-icon pay-alfamart" role="img" aria-label="Alfamart"></span></li>
+              <li><span class="pay-icon pay-mandiri" role="img" aria-label="Mandiri"></span></li>
+              <li><span class="pay-icon pay-bri" role="img" aria-label="BRI"></span></li>
+              <li><span class="pay-icon pay-bni" role="img" aria-label="BNI"></span></li>
+              <li><span class="pay-icon pay-permata" role="img" aria-label="Permata"></span></li>
+              <li><span class="pay-icon pay-permata-syariah" role="img" aria-label="Permata Syariah"></span></li>
+              <li><span class="pay-icon pay-danamon" role="img" aria-label="Danamon"></span></li>
+              <li><span class="pay-icon pay-bsi" role="img" aria-label="BSI"></span></li>
+              <li><span class="pay-icon pay-cimb" role="img" aria-label="CIMB Niaga"></span></li>
+              <li><span class="pay-icon pay-visa" role="img" aria-label="Visa"></span></li>
+              <li><span class="pay-icon pay-jcb" role="img" aria-label="JCB"></span></li>
+              <li><span class="pay-icon pay-master" role="img" aria-label="Mastercard"></span></li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="footer-group" open>
+          <summary class="footer-title">
+            Shipment Method
+            <svg class="footer-chev" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="currentColor">
+              <path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 0 0-1.41 0 1 1 0 0 0 0 1.42l4.24 4.24a1 1 0 0 0 1.42 0L17 10.59a1 1 0 0 0 0-1.42Z"/>
+            </svg>
+          </summary>
+          <div class="footer-body">
+            <ul class="payments" aria-label="Metode pengiriman">
+              <li><span class="pay-icon pay-jne" role="img" aria-label="JNE"></span></li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> Calmats. All rights reserved.</p>
+        <p class="footer-bottom__meta">Jakarta, Indonesia</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Mobile navigation -->
+  <div class="overlay" data-close-nav hidden></div>
+  <aside class="mobile-nav" id="mobileNav" aria-label="Menu seluler" aria-hidden="true">
+    <div class="mobile-nav__head">
+      <span class="logo logo--small">CALMATS</span>
+      <button class="icon-btn" type="button" aria-label="Tutup menu" data-close-nav>
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <path d="M6 6l12 12M18 6 6 18"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="mobile-nav__links" aria-label="Navigasi seluler">
+      <a href="products.html">Catalog</a>
+      <a href="community.html">Community</a>
+      <a href="#archives" data-demo-link="Archives">Archives</a>
+      <a href="#about" data-demo-link="About">About</a>
+    </nav>
+    <div class="mobile-nav__foot">
+      <p class="mobile-nav__label">Mata uang</p>
+      <div class="mobile-currency">
+        <button type="button" class="currency-option" data-currency-option data-code="USD" data-flag="assets/flags/us.svg" data-country="United States" aria-pressed="true">
+          <img src="assets/flags/us.svg" alt="" width="18" height="13"> USD
+        </button>
+        <button type="button" class="currency-option" data-currency-option data-code="IDR" data-flag="assets/flags/id.svg" data-country="Indonesia" aria-pressed="false">
+          <img src="assets/flags/id.svg" alt="" width="18" height="13"> IDR
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Cart drawer -->
+  <div class="overlay" data-close-cart hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-labelledby="cartTitle" aria-hidden="true">
+    <div class="cart-drawer__head">
+      <h2 id="cartTitle">Cart <span data-cart-count-label>(0)</span></h2>
+      <button class="icon-btn" type="button" aria-label="Tutup keranjang" data-close-cart>
+        <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+          <path d="M6 6l12 12M18 6 6 18"/>
+        </svg>
+      </button>
+    </div>
+    <div class="cart-drawer__body">
+      <svg class="cart-empty__icon" viewBox="0 0 24 24" width="44" height="44" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5.5 8h13l-1 12.5h-11L5.5 8Z"/>
+        <path d="M9 8V6.2A3 3 0 0 1 12 3.2a3 3 0 0 1 3 3V8"/>
+      </svg>
+      <p class="cart-empty__title">Your cart is empty</p>
+      <p class="cart-empty__text">Belum ada produk di keranjangmu.</p>
+      <a class="btn" href="#hero" data-close-cart>Shop Here</a>
+    </div>
+  </aside>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

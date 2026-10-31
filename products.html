@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products — CALMATS</title>
+  <meta name="description" content="Jelajahi koleksi Calmats: denim dan workwear kontemporer.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/freeman-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/montserrat-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/products.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <div class="app">
+    <header class="site-header">
+      <div class="header-inner">
+        <button class="icon-btn menu-toggle" type="button" aria-label="Buka menu" aria-controls="mobileNav" aria-expanded="false" data-open-nav>
+          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3.5 6.5h17M3.5 12h17M3.5 17.5h17"/></svg>
+        </button>
+        <a class="logo" href="./" aria-label="Calmats — beranda">CALMATS</a>
+        <nav class="main-nav" aria-label="Navigasi utama">
+          <a class="nav-link" href="products.html" aria-current="page">Catalog</a>
+          <a class="nav-link" href="community.html">Community</a>
+          <a class="nav-link" href="#archives" data-demo-link="Archives">Archives</a>
+          <a class="nav-link" href="#about" data-demo-link="About">About</a>
+        </nav>
+        <div class="header-actions">
+          <div class="currency" data-currency>
+            <button class="currency-toggle" type="button" aria-haspopup="listbox" aria-expanded="false" data-currency-toggle>
+              <img src="assets/flags/id.svg" alt="" width="18" height="13" data-currency-flag><span data-currency-code>IDR</span>
+              <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <ul class="currency-menu" role="listbox" aria-label="Mata uang" hidden data-currency-menu>
+              <li><button type="button" role="option" aria-selected="false" data-currency-option data-code="USD" data-flag="assets/flags/us.svg" data-country="United States"><img src="assets/flags/us.svg" alt="" width="18" height="13"><span class="currency-menu__text"><strong>USD</strong><small>United States · $</small></span></button></li>
+              <li><button type="button" role="option" aria-selected="true" data-currency-option data-code="IDR" data-flag="assets/flags/id.svg" data-country="Indonesia"><img src="assets/flags/id.svg" alt="" width="18" height="13"><span class="currency-menu__text"><strong>IDR</strong><small>Indonesia · Rp</small></span></button></li>
+            </ul>
+          </div>
+          <button class="cart-btn" type="button" aria-controls="cartDrawer" aria-expanded="false" data-open-cart><svg class="cart-btn__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 8h13l-1 12.5h-11L5.5 8Z"/><path d="M9 8V6.2A3 3 0 0 1 12 3.2a3 3 0 0 1 3 3V8"/></svg><span class="cart-btn__label">Cart</span></button>
+          <a class="icon-btn" href="#account" aria-label="Akun" data-demo-link="Account"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M12 12.6a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4Zm0 1.5c-5 0-8 2.6-8 7h16c0-4.4-3-7-8-7Z"/></svg></a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="catalog-page">
+      <div class="catalog-heading"><p class="catalog-eyebrow">CALMATS / SHOP</p><h1>Products</h1></div>
+      <div class="catalog-layout">
+        <aside class="catalog-filters" id="catalogFilters" aria-label="Filter produk">
+          <label class="catalog-search"><span class="sr-only">Cari produk</span><input type="search" placeholder="Search Product" data-search></label>
+          <fieldset><legend>Product Type</legend><label class="filter-choice"><input type="radio" name="product-type" value="all" checked data-type-filter> All Products</label><label class="filter-choice"><input type="radio" name="product-type" value="featured" data-type-filter> Featured Products</label></fieldset>
+          <fieldset><legend>Availability</legend><label class="filter-choice"><input type="checkbox" value="in-stock" data-availability> In Stock</label></fieldset>
+          <fieldset><legend>Price</legend><label class="filter-choice"><input type="radio" name="price-range" value="all" checked data-price-filter> All prices</label><label class="filter-choice"><input type="radio" name="price-range" value="under" data-price-filter> Under Rp 690,000</label><label class="filter-choice"><input type="radio" name="price-range" value="mid" data-price-filter> Rp 690,000 - 780,000</label><label class="filter-choice"><input type="radio" name="price-range" value="high" data-price-filter> Rp 780,000 - 870,000</label><label class="filter-choice"><input type="radio" name="price-range" value="top" data-price-filter> Rp 870,000 +</label></fieldset>
+          <fieldset><legend>Size</legend><div class="size-filters"><label><input type="checkbox" value="S" data-size-filter><span>S</span></label><label><input type="checkbox" value="M" data-size-filter><span>M</span></label><label><input type="checkbox" value="L" data-size-filter><span>L</span></label><label><input type="checkbox" value="XL" data-size-filter><span>XL</span></label><label><input type="checkbox" value="XXL" data-size-filter><span>XXL</span></label><label><input type="checkbox" value="39" data-size-filter><span>39</span></label><label><input type="checkbox" value="40" data-size-filter><span>40</span></label><label><input type="checkbox" value="41" data-size-filter><span>41</span></label><label><input type="checkbox" value="42" data-size-filter><span>42</span></label><label><input type="checkbox" value="43" data-size-filter><span>43</span></label><label><input type="checkbox" value="44" data-size-filter><span>44</span></label><label><input type="checkbox" value="45" data-size-filter><span>45</span></label></div></fieldset>
+          <button class="catalog-reset" type="button" data-reset-filters>Clear filters</button>
+        </aside>
+        <section class="catalog-results" aria-label="Daftar produk">
+          <div class="catalog-toolbar"><button class="filter-toggle" type="button" aria-expanded="false" aria-controls="catalogFilters" data-filter-toggle>Filter & sort</button><p><span data-result-count>12</span> products</p><label class="sort-control">Sort : <select aria-label="Urutkan produk" data-sort><option value="featured">Featured</option><option value="recent">Recent</option><option value="oldest">Oldest</option><option value="popular">Most Popular</option><option value="price-asc">Lowest Price</option><option value="price-desc">Highest Price</option><option value="name-asc">Product Name (A-Z)</option><option value="name-desc">Product Name (Z-A)</option></select></label></div>
+          <div class="product-grid" data-product-grid>
+            <a class="product-card" href="#product-batik-longsleeve" data-product data-name="BATIK LONGSLEEVE" data-price="749000" data-sizes="S M L XL XXL" data-featured="true" data-order="1" data-available="true" data-demo-link="Batik Longsleeve"><span class="product-card__image"><img src="assets/products/batik-longsleeve.webp" alt="Batik Longsleeve" loading="lazy" width="512" height="512"></span><span class="product-card__details"><strong>BATIK LONGSLEEVE</strong><span>Rp 749,000</span></span></a>
+            <a class="product-card" href="#product-batik-shortsleeve" data-product data-name="BATIK SHORTSLEEVE" data-price="699000" data-sizes="S M L XL XXL" data-featured="true" data-order="2" data-available="true" data-demo-link="Batik Shortsleeve"><span class="product-card__image"><img src="assets/products/batik-shortsleeve.webp" alt="Batik Shortsleeve" loading="lazy" width="512" height="512"></span><span class="product-card__details"><strong>BATIK SHORTSLEEVE</strong><span>Rp 699,000</span></span></a>
+            <a class="product-card" href="#product-jersey-black" data-product data-name="JERSEY BLACK" data-price="638000" data-sizes="S M L XL XXL" data-featured="true" data-order="3" data-available="true" data-demo-link="Jersey Black"><span class="product-card__image"><img src="assets/products/jersey-black.webp" alt="Jersey Black" loading="lazy" width="512" height="512"></span><span class="product-card__details"><strong>JERSEY BLACK</strong><span>Rp 638,000</span></span></a>
+            <a class="product-card" href="#product-jersey-red" data-product data-name="JERSEY RED" data-price="638000" data-sizes="S M L XL XXL" data-featured="true" data-order="4" data-available="true" data-demo-link="Jersey Red"><span class="product-card__image"><img src="assets/products/jersey-red.webp" alt="Jersey Red" loading="lazy" width="512" height="512"></span><span class="product-card__details"><strong>JERSEY RED</strong><span>Rp 638,000</span></span></a>
+            <a class="product-card" href="#product-work-jacket-camo" data-product data-name="WORK JACKET CAMO" data-price="958000" data-sizes="S M L XL XXL" data-featured="true" data-order="5" data-available="true" data-demo-link="Work Jacket Camo"><span class="product-card__image"><img src="assets/products/work-jacket-camo.webp" alt="Work Jacket Camo" loading="lazy" width="512" height="512"></span><span class="product-card__details"><strong>WORK JACKET CAMO</strong><span>Rp 958,000</span></span></a>
+            <a class="product-card" href="#product-straight-jeans-camo" data-product data-name="STRAIGHT JEANS CAMO" data-price="758000" data-sizes="S M L XL XXL" data-featured="true" data-order="6" data-available="true" data-demo-link="Straight Jeans Camo"><span class="product-card__image"><img src="assets/products/straight-jeans-camo.webp" alt="Straight Jeans Camo" loading="lazy" width="512" height="512"></span><span class="product-card__details"><strong>STRAIGHT JEANS CAMO</strong><span>Rp 758,000</span></span></a>
+            <a class="product-card" href="#product-sweatpants-misty" data-product data-name="SWEATPANTS MISTY" data-price="608000" data-sizes="S M L XL XXL" data-featured="true" data-order="7" data-available="true" data-demo-link="Sweatpants Misty"><span class="product-card__image"><img src="assets/products/sweatpants-misty.webp" alt="Sweatpants Misty" loading="lazy" width="512" height="512"></span><span class="product-card__details"><strong>SWEATPANTS MISTY</strong><span>Rp 608,000</span></span></a>
+            <a class="product-card is-sold-out" href="#product-court-calle-black" data-product data-name="COURT CALLE BLACK" data-price="1198000" data-sizes="39 40 41 42 43 44 45" data-featured="false" data-order="8" data-available="false" data-demo-link="Court Calle Black"><span class="product-card__image"><img src="assets/products/court-calle-black.webp" alt="Court Calle Black" loading="lazy" width="512" height="512"><span class="sold-out-badge">Sold Out</span></span><span class="product-card__details"><strong>COURT CALLE BLACK</strong><span>Rp 1,198,000</span></span></a>
+            <a class="product-card is-sold-out" href="#product-court-calle-white" data-product data-name="COURT CALLE WHITE" data-price="1198000" data-sizes="39 40 41 42 43 44 45" data-featured="false" data-order="9" data-available="false" data-demo-link="Court Calle White"><span class="product-card__image"><img src="assets/products/court-calle-white.webp" alt="Court Calle White" loading="lazy" width="512" height="512"><span class="sold-out-badge">Sold Out</span></span><span class="product-card__details"><strong>COURT CALLE WHITE</strong><span>Rp 1,198,000</span></span></a>
+            <a class="product-card is-sold-out" href="#product-trucker-jacket-wash" data-product data-name="TRUCKER JACKET WASH" data-price="958000" data-sizes="S M L XL XXL" data-featured="false" data-order="10" data-available="false" data-demo-link="Trucker Jacket Wash"><span class="product-card__image"><img src="assets/products/trucker-jacket-wash.webp" alt="Trucker Jacket Wash" loading="lazy" width="512" height="512"><span class="sold-out-badge">Sold Out</span></span><span class="product-card__details"><strong>TRUCKER JACKET WASH</strong><span>Rp 958,000</span></span></a>
+            <a class="product-card is-sold-out" href="#product-zip-hoodie-black" data-product data-name="ZIP HOODIE BLACK" data-price="698000" data-sizes="S M L XL XXL" data-featured="false" data-order="11" data-available="false" data-demo-link="Zip Hoodie Black"><span class="product-card__image"><img src="assets/products/zip-hoodie-black.webp" alt="Zip Hoodie Black" loading="lazy" width="512" height="512"><span class="sold-out-badge">Sold Out</span></span><span class="product-card__details"><strong>ZIP HOODIE BLACK</strong><span>Rp 698,000</span></span></a>
+            <a class="product-card is-sold-out" href="#product-zip-hoodie-misty" data-product data-name="ZIP HOODIE MISTY" data-price="698000" data-sizes="S M L XL XXL" data-featured="false" data-order="12" data-available="false" data-demo-link="Zip Hoodie Misty"><span class="product-card__image"><img src="assets/products/zip-hoodie-misty.webp" alt="Zip Hoodie Misty" loading="lazy" width="512" height="512"><span class="sold-out-badge">Sold Out</span></span><span class="product-card__details"><strong>ZIP HOODIE MISTY</strong><span>Rp 698,000</span></span></a>
+          </div>
+          <p class="catalog-empty" hidden data-empty>No products match these filters.</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer" id="footer"><div class="footer-groups">
+      <details class="footer-group" open><summary class="footer-title">Payment Method<svg class="footer-chev" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="currentColor"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 0 0-1.41 0 1 1 0 0 0 0 1.42l4.24 4.24a1 1 0 0 0 1.42 0L17 10.59a1 1 0 0 0 0-1.42Z"/></svg></summary><div class="footer-body"><ul class="payments" aria-label="Metode pembayaran"><li><span class="pay-icon pay-qris" role="img" aria-label="QRIS"></span></li><li><span class="pay-icon pay-ovo" role="img" aria-label="OVO"></span></li><li><img class="pay-logo" src="assets/payments/akulaku.svg" alt="Akulaku" width="48" height="48" loading="lazy"></li><li><span class="pay-icon pay-alfamart" role="img" aria-label="Alfamart"></span></li><li><span class="pay-icon pay-mandiri" role="img" aria-label="Mandiri"></span></li><li><span class="pay-icon pay-bri" role="img" aria-label="BRI"></span></li><li><span class="pay-icon pay-bni" role="img" aria-label="BNI"></span></li><li><span class="pay-icon pay-permata" role="img" aria-label="Permata"></span></li><li><span class="pay-icon pay-permata-syariah" role="img" aria-label="Permata Syariah"></span></li><li><span class="pay-icon pay-danamon" role="img" aria-label="Danamon"></span></li><li><span class="pay-icon pay-bsi" role="img" aria-label="BSI"></span></li><li><span class="pay-icon pay-cimb" role="img" aria-label="CIMB Niaga"></span></li><li><span class="pay-icon pay-visa" role="img" aria-label="Visa"></span></li><li><span class="pay-icon pay-jcb" role="img" aria-label="JCB"></span></li><li><span class="pay-icon pay-master" role="img" aria-label="Mastercard"></span></li></ul></div></details>
+      <details class="footer-group" open><summary class="footer-title">Shipment Method<svg class="footer-chev" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="currentColor"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71a1 1 0 0 0 1.42 0L17 10.59a1 1 0 0 0 0-1.42Z"/></svg></summary><div class="footer-body"><ul class="payments" aria-label="Metode pengiriman"><li><span class="pay-icon pay-jne" role="img" aria-label="JNE"></span></li></ul></div></details>
+    </div><div class="footer-bottom"><p>&copy; <span data-year>2026</span> Calmats. All rights reserved.</p><p class="footer-bottom__meta">Jakarta, Indonesia</p></div></footer>
+  </div>
+
+  <div class="overlay" data-close-nav hidden></div>
+  <aside class="mobile-nav" id="mobileNav" aria-label="Menu seluler" aria-hidden="true"><div class="mobile-nav__head"><span class="logo logo--small">CALMATS</span><button class="icon-btn" type="button" aria-label="Tutup menu" data-close-nav><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div><nav class="mobile-nav__links" aria-label="Navigasi seluler"><a href="products.html" aria-current="page">Catalog</a><a href="community.html">Community</a><a href="#archives" data-demo-link="Archives">Archives</a><a href="#about" data-demo-link="About">About</a></nav><div class="mobile-nav__foot"><p class="mobile-nav__label">Mata uang</p><div class="mobile-currency"><button type="button" class="currency-option" data-currency-option data-code="USD" data-flag="assets/flags/us.svg" data-country="United States" aria-pressed="false"><img src="assets/flags/us.svg" alt="" width="18" height="13"> USD</button><button type="button" class="currency-option" data-currency-option data-code="IDR" data-flag="assets/flags/id.svg" data-country="Indonesia" aria-pressed="true"><img src="assets/flags/id.svg" alt="" width="18" height="13"> IDR</button></div></div></aside>
+  <div class="overlay" data-close-cart hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-labelledby="cartTitle" aria-hidden="true"><div class="cart-drawer__head"><h2 id="cartTitle">Cart <span data-cart-count-label>(0)</span></h2><button class="icon-btn" type="button" aria-label="Tutup keranjang" data-close-cart><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div><div class="cart-drawer__body"><p class="cart-empty__title">Your cart is empty</p><p class="cart-empty__text">Belum ada produk di keranjangmu.</p><a class="btn" href="#main" data-close-cart>Shop Here</a></div></aside>
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+  <script src="js/main.js" defer></script>
+  <script src="js/products.js" defer></script>
+</body>
+</html>

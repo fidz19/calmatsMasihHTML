@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Community — CALMATS</title>
+  <meta name="description" content="Lihat Calmats dipakai oleh komunitas kami.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/freeman-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/montserrat-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/community.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Lewati ke konten</a>
+  <div class="app">
+    <header class="site-header">
+      <div class="header-inner">
+        <button class="icon-btn menu-toggle" type="button" aria-label="Buka menu" aria-controls="mobileNav" aria-expanded="false" data-open-nav>
+          <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3.5 6.5h17M3.5 12h17M3.5 17.5h17"/></svg>
+        </button>
+        <a class="logo" href="./" aria-label="Calmats — beranda">CALMATS</a>
+        <nav class="main-nav" aria-label="Navigasi utama">
+          <a class="nav-link" href="products.html">Catalog</a>
+          <a class="nav-link" href="community.html" aria-current="page">Community</a>
+          <a class="nav-link" href="#archives" data-demo-link="Archives">Archives</a>
+          <a class="nav-link" href="#about" data-demo-link="About">About</a>
+        </nav>
+        <div class="header-actions">
+          <div class="currency" data-currency>
+            <button class="currency-toggle" type="button" aria-haspopup="listbox" aria-expanded="false" data-currency-toggle>
+              <img src="assets/flags/id.svg" alt="" width="18" height="13" data-currency-flag><span data-currency-code>IDR</span>
+              <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <ul class="currency-menu" role="listbox" aria-label="Mata uang" hidden data-currency-menu>
+              <li><button type="button" role="option" aria-selected="false" data-currency-option data-code="USD" data-flag="assets/flags/us.svg" data-country="United States"><img src="assets/flags/us.svg" alt="" width="18" height="13"><span class="currency-menu__text"><strong>USD</strong><small>United States · $</small></span></button></li>
+              <li><button type="button" role="option" aria-selected="true" data-currency-option data-code="IDR" data-flag="assets/flags/id.svg" data-country="Indonesia"><img src="assets/flags/id.svg" alt="" width="18" height="13"><span class="currency-menu__text"><strong>IDR</strong><small>Indonesia · Rp</small></span></button></li>
+            </ul>
+          </div>
+          <button class="cart-btn" type="button" aria-controls="cartDrawer" aria-expanded="false" data-open-cart><svg class="cart-btn__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5.5 8h13l-1 12.5h-11L5.5 8Z"/><path d="M9 8V6.2A3 3 0 0 1 12 3.2a3 3 0 0 1 3 3V8"/></svg><span class="cart-btn__label">Cart</span></button>
+          <a class="icon-btn" href="#account" aria-label="Akun" data-demo-link="Account"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="currentColor"><path d="M12 12.6a4.2 4.2 0 1 0 0-8.4 4.2 4.2 0 0 0 0 8.4Zm0 1.5c-5 0-8 2.6-8 7h16c0-4.4-3-7-8-7Z"/></svg></a>
+        </div>
+      </div>
+    </header>
+
+    <main id="main" class="community-page" aria-label="Community gallery">
+      <div class="community-gallery">
+        <img src="assets/community/community-01.webp" alt="Anggota komunitas mengenakan Calmats di rumah dan di luar ruangan" width="1024" height="576" fetchpriority="high">
+        <img src="assets/community/community-02.webp" alt="Momen komunitas Calmats dalam berbagai gaya sehari-hari" width="1024" height="576" loading="lazy">
+        <img src="assets/community/community-03.webp" alt="Anggota komunitas memakai koleksi Calmats" width="1024" height="576" loading="lazy">
+        <img src="assets/community/community-04.webp" alt="Gaya pelanggan Calmats di keseharian mereka" width="1024" height="576" loading="lazy">
+        <img src="assets/community/community-05.webp" alt="Dokumentasi komunitas dan pelanggan Calmats" width="1024" height="576" loading="lazy">
+      </div>
+    </main>
+
+    <footer class="site-footer" id="footer">
+      <div class="footer-groups">
+        <details class="footer-group" open>
+          <summary class="footer-title">Payment Method<svg class="footer-chev" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="currentColor"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 0 0-1.41 0 1 1 0 0 0 0 1.42l4.24 4.24a1 1 0 0 0 1.42 0L17 10.59a1 1 0 0 0 0-1.42Z"/></svg></summary>
+          <div class="footer-body"><ul class="payments" aria-label="Metode pembayaran"><li><span class="pay-icon pay-qris" role="img" aria-label="QRIS"></span></li><li><span class="pay-icon pay-ovo" role="img" aria-label="OVO"></span></li><li><img class="pay-logo" src="assets/payments/akulaku.svg" alt="Akulaku" width="48" height="48" loading="lazy"></li><li><span class="pay-icon pay-alfamart" role="img" aria-label="Alfamart"></span></li><li><span class="pay-icon pay-mandiri" role="img" aria-label="Mandiri"></span></li><li><span class="pay-icon pay-bri" role="img" aria-label="BRI"></span></li><li><span class="pay-icon pay-bni" role="img" aria-label="BNI"></span></li><li><span class="pay-icon pay-permata" role="img" aria-label="Permata"></span></li><li><span class="pay-icon pay-permata-syariah" role="img" aria-label="Permata Syariah"></span></li><li><span class="pay-icon pay-danamon" role="img" aria-label="Danamon"></span></li><li><span class="pay-icon pay-bsi" role="img" aria-label="BSI"></span></li><li><span class="pay-icon pay-cimb" role="img" aria-label="CIMB Niaga"></span></li><li><span class="pay-icon pay-visa" role="img" aria-label="Visa"></span></li><li><span class="pay-icon pay-jcb" role="img" aria-label="JCB"></span></li><li><span class="pay-icon pay-master" role="img" aria-label="Mastercard"></span></li></ul></div>
+        </details>
+        <details class="footer-group" open>
+          <summary class="footer-title">Shipment Method<svg class="footer-chev" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="currentColor"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71a1 1 0 0 0 1.42 0L17 10.59a1 1 0 0 0 0-1.42Z"/></svg></summary>
+          <div class="footer-body"><ul class="payments" aria-label="Metode pengiriman"><li><span class="pay-icon pay-jne" role="img" aria-label="JNE"></span></li></ul></div>
+        </details>
+      </div>
+      <div class="footer-bottom"><p>&copy; <span data-year>2026</span> Calmats. All rights reserved.</p><p class="footer-bottom__meta">Jakarta, Indonesia</p></div>
+    </footer>
+  </div>
+
+  <div class="overlay" data-close-nav hidden></div>
+  <aside class="mobile-nav" id="mobileNav" aria-label="Menu seluler" aria-hidden="true">
+    <div class="mobile-nav__head"><span class="logo logo--small">CALMATS</span><button class="icon-btn" type="button" aria-label="Tutup menu" data-close-nav><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+    <nav class="mobile-nav__links" aria-label="Navigasi seluler"><a href="products.html">Catalog</a><a href="community.html" aria-current="page">Community</a><a href="#archives" data-demo-link="Archives">Archives</a><a href="#about" data-demo-link="About">About</a></nav>
+    <div class="mobile-nav__foot"><p class="mobile-nav__label">Mata uang</p><div class="mobile-currency"><button type="button" class="currency-option" data-currency-option data-code="USD" data-flag="assets/flags/us.svg" data-country="United States" aria-pressed="false"><img src="assets/flags/us.svg" alt="" width="18" height="13"> USD</button><button type="button" class="currency-option" data-currency-option data-code="IDR" data-flag="assets/flags/id.svg" data-country="Indonesia" aria-pressed="true"><img src="assets/flags/id.svg" alt="" width="18" height="13"> IDR</button></div></div>
+  </aside>
+  <div class="overlay" data-close-cart hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-labelledby="cartTitle" aria-hidden="true"><div class="cart-drawer__head"><h2 id="cartTitle">Cart <span data-cart-count-label>(0)</span></h2><button class="icon-btn" type="button" aria-label="Tutup keranjang" data-close-cart><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div><div class="cart-drawer__body"><p class="cart-empty__title">Your cart is empty</p><p class="cart-empty__text">Belum ada produk di keranjangmu.</p><a class="btn" href="#main" data-close-cart>Shop Here</a></div></aside>
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
